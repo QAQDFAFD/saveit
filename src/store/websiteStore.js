@@ -18,6 +18,7 @@ const useWebsiteStore = defineStore('websiteStore', {
         },
         deleteWebsite(website) {
             this.websites = this.websites.filter(w => w.url !== website)
+            console.log(this.websites)
             store.set('websites', this.websites)
         }
     }

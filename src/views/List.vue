@@ -29,6 +29,7 @@ const deleteWebsite = ws => {
         if (res.response) {
             // console.log(ws.url)
             websiteStore.deleteWebsite(ws.url)
+            realWebsites.arr = websiteStore.websites
         }
     })
 }

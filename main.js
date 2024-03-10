@@ -3,10 +3,10 @@ const { app, BrowserWindow, shell, ipcMain, Tray, Menu } = require('electron')
 const path = require('path')
 require('./controller/getSource')
 require('./controller/showDialog')
-""
+;('')
 const createWindow = () => {
     const win = new BrowserWindow({
-        width: 500,
+        width: 1000,
         height: 600,
         show: false,
         webPreferences: {
@@ -18,7 +18,7 @@ const createWindow = () => {
 
     win.loadURL('http://localhost:5173/')
 
-    // win.webContents.openDevTools()
+    win.webContents.openDevTools()
 
     win.on('ready-to-show', () => {
         win.show()
