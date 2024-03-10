@@ -13,6 +13,7 @@
 
 - pinia
 - store2
+- electron-builder
 
 ## 项目启动
 

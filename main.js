@@ -6,7 +6,7 @@ require('./controller/showDialog')
 ;('')
 const createWindow = () => {
     const win = new BrowserWindow({
-        width: 1000,
+        width: 500,
         height: 600,
         show: false,
         webPreferences: {
@@ -18,7 +18,7 @@ const createWindow = () => {
 
     win.loadURL('http://localhost:5173/')
 
-    win.webContents.openDevTools()
+    // win.webContents.openDevTools()
 
     win.on('ready-to-show', () => {
         win.show()
